@@ -33,30 +33,38 @@
 
 var q1={
    "pregnancy":"How many people will test positive?",
-    "disease": "How many people will test positive?" 
+    "disease": "How many people will test positive?",
+    "posture":"How many students will carry all their books to school?"
 }
 
 var q2={
    "pregnancy":"Of those who test positive, how many are actually pregnant?" ,
-    "disease":  "Of those who test positive, how many actually have the disease?"
+    "disease":  "Of those who test positive, how many actually have the disease?",
+    "posture":"Of those who carry all their books to school, how many will have bad posture?"
 }
 
 var intros={
  "pregnancy": "At home pregnancy tests detect the presence of hCG hormone in urine, which indicates pregnancy. However, home pregnancy tests are not perfect. Here is some information about the current research on home pregnancy tests and efforts to increase their accuracy.",
 "disease": "There is a newly discovered disease, Disease X, which is transmitted by a bacterial infection found in the population. There is a test to detect whether or not a person has the disease, but it is not perfect. Here is some information about the current research on Disease X and efforts to test for the infection that causes it.",
-"cab":"A cab was involved in a hit-and-run accident at night. Two cab companies, the Green and the Blue, operate in the city. Here is some information about the cabs."
+"cab":"A cab was involved in a hit-and-run accident at night. Two cab companies, the Green and the Blue, operate in the city. Here is some information about the cabs.",
+"posture":"Children as young as seven years old are suffering from back problems due to poor posture. Some schools have made efforts at minimizing the risk factors for developing back posture by providing lockers so that students can avoid carrying heavy backpacks. Here is some information about the current research on bad posture and efforts to test for the factors that cause it. "
         }
 
 var problem_text={
 "pregnancy": "There is a total of 100 women in the population. Out of the 100 women in the population, 20 are pregnant. Out of these 20 women, 18 will receive a positive test result and 2 will receive a negative test result. On the other hand, 80 women are not pregnant. Out of these 80 women, 2 will receive a positive test result and 78 will receive a negative test result.",
 "disease":  "There is a total of 100 people in the population. Out of the 100 people in the population, 6 people actually have the disease. Out of these 6 people, 4 will receive a positive test result and 2 will receive a negative test result. On the other hand, 94 people do not have the disease (i.e., they are perfectly healthy). Out of these 94 people, 16 will receive a positive test result and 78 will receive a negative test result.",
-"cab":"Of every 100 cabs in the city, 15 are Blue and 85 are Green. On the night of the accident, a witness identified the cab as Blue. The court tested the reliability of the witness under the similar visibility conditions with Blue and Green cabs. When the cabs were really blue, the witness said they were Green in 80 out of 100 tests. When the cabs were really Green, the witness said they were Blue in 20 out of 100 tests."
+"cab":"Of every 100 cabs in the city, 15 are Blue and 85 are Green. On the night of the accident, a witness identified the cab as Blue. The court tested the reliability of the witness under the similar visibility conditions with Blue and Green cabs. When the cabs were really blue, the witness said they were Green in 80 out of 100 tests. When the cabs were really Green, the witness said they were Blue in 20 out of 100 tests.",
+"posture":"There is a total of 100 middle school students in the population. Out of the 100 students, 5 have bad posture. Out of these 5 students, 2 carry all their books to school every day and 3 keep all their books in lockers at school. On the other hand, 95 students have good posture. Out of these 95 students, 18 carry all their books to school every day and 77 keep all their books in lockers at school"
 }
 
 var data_vis_grouped= {
 "pregnancy": [[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],[19, 20],[21,22]],
 "disease":[[1, 2, 3, 4],[5, 6],[7, 8, 9, 10, 11, 12, 13, 14, 24, 25, 26, 27, 28, 29, 30, 31]],
-"cab":[[1,2,3,4,5,6,7,8,9,10,11,12],[13,14,15,16,17,18, 19, 20, 21,22,23,24,25,26,27,28,29],[30, 31, 32, 33,34,35,36,37,38,39,40,41,42,43,44]]
+"cab":[[1,2,3,4,5,6,7,8,9,10,11,12],[13,14,15,16,17,18, 19, 20, 21,22,23,24,25,26,27,28,29],[30, 31, 32, 33,34,35,36,37,38,39,40,41,42,43,44]],
+"posture":[[1,2],[3,4,5],[6, 7, 8, 9, 10, 11, 12, 13,25,26,27,28,29,30,31,32]]
+//1st: orange guys within the yellow box
+//2nd: grey guys within the yellow box
+//3rd: orange guys as part of the blue box
 }
 
 var margin = {top:10, bottom:0, left:0, right:0}; 
@@ -111,6 +119,20 @@ function initialize(){
         icon_width = 2; 
         icon_width2 = 17; 
     }
+    if (scenario=="posture"){
+        document.getElementById("intro").innerHTML=intros["posture"]
+        document.getElementById("problem_text").innerHTML=problem_text["posture"]
+        document.getElementById("positive_text").innerHTML="Has bad posture"
+        document.getElementById("negative_text").innerHTML="Do not have bad posture"
+        document.getElementById("test_positive_text").innerHTML="Carry books"
+        document.getElementById("test_negative_text").innerHTML="Do not carry books"
+        width = 172; //vertical space between icons in yellow box
+        width2 = 670; 
+        height = 250; //height of svg for yellow box
+        height2 = 275;   
+        icon_width = 1; //number of columns in yellow box
+        icon_width2 = 19; //number of columns in blue box
+    }
     if (scenario=="cab"){
         document.getElementById("intro").innerHTML=intros["cab"]
         document.getElementById("problem_text").innerHTML=problem_text["cab"]
@@ -125,6 +147,7 @@ function initialize(){
         icon_width = 6; 
         icon_width2 = 14; 
     }
+
     if (condition=="text"){
         document.getElementById('labels').style.display="none"
         document.getElementById('problem_text').style.display="block"
