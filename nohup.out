@@ -493,3 +493,10 @@ Emitted 'error' event at:
 47301:M 09 Jun 2021 15:43:14.264 # Could not create server TCP listening socket *:6383: bind: Address already in use
 Listening on port 8003
 Connected to redis.
+38025:C 10 Jun 2021 10:26:27.744 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+38025:C 10 Jun 2021 10:26:27.749 # Redis version=5.0.5, bits=64, commit=92043eed, modified=0, pid=38025, just started
+38025:C 10 Jun 2021 10:26:27.749 # Configuration loaded
+38025:M 10 Jun 2021 10:26:27.751 * Increased maximum number of open files to 10032 (it was originally set to 256).
+38025:M 10 Jun 2021 10:26:27.751 # Could not create server TCP listening socket *:6383: bind: Address already in use
+Listening on port 8004
+Connected to redis.
