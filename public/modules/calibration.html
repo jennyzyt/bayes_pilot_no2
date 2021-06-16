@@ -208,14 +208,14 @@ function checkPerformance(){
          //    }
          // }
          // else{
-            if ((d_prime > 0.2*perfect_dprime) && (level_number!="Level 8")){ 
+            if ((d_prime > 0.25*perfect_dprime) && (level_number!="Level 8")){ 
               console.log("in first if")
               d_primes.push({speed:speed, d_prime:d_prime, perfect_dprime:perfect_dprime})
               console.log("d_primes is ",d_primes)
               speed=speed*0.75
               nextLevel(speed)
             }
-            else if ((d_prime <=0.2*perfect_dprime) || (level_number=="Level 8")){
+            else if ((d_prime <=0.25*perfect_dprime) || (level_number=="Level 8")){
               console.log("in second if")
               d_primes.push({speed:speed, d_prime:d_prime, perfect_dprime:perfect_dprime})
 
@@ -234,21 +234,21 @@ function checkPerformance(){
                   element=d_primes[i]
                   console.log("element d prime is ", parseFloat(element.d_prime))
                   console.log("element speed is ", element.speed)
-                  if ( Math.abs( (0.8*perfect_dprime) - parseFloat(element.d_prime)) < Math.abs( (0.8*perfect_dprime) - parseFloat(dprime_easy))){
+                  if ( Math.abs( (0.75*perfect_dprime) - parseFloat(element.d_prime)) < Math.abs( (0.75*perfect_dprime) - parseFloat(dprime_easy))){
                     console.log("in speed easy")
                     speed_easy=element.speed
                     dprime_easy=parseFloat(element.d_prime)
                   }
-                  if (Math.abs((0.2*perfect_dprime) - parseFloat(element.d_prime)) < Math.abs( (0.2*perfect_dprime) - parseFloat(dprime_hard))){
+                  if (Math.abs((0.25*perfect_dprime) - parseFloat(element.d_prime)) < Math.abs( (0.25*perfect_dprime) - parseFloat(dprime_hard))){
                     console.log("in speed hard")
                     speed_hard=element.speed
                     dprime_hard=parseFloat(element.d_prime)
                   }              
                 } 
-                ans.speed_easy=speed_easy
-                ans.cali_dprime_easy=dprime_easy
-                ans.speed_hard=speed_hard
-                ans.cali_dprime_hard=dprime_hard
+                ans.speed75=speed_easy
+                ans.cali_dprime75=dprime_easy
+                // ans.speed_hard=speed_hard
+                // ans.cali_dprime_hard=dprime_hard
                 console.log("ANS is ",ans)
                 experimentr.addData(ans); 
                 experimentr.next(); 
