@@ -85787,3 +85787,4074 @@ $9
 timestamp
 $13
 1623276605709
+*2
+$6
+SELECT
+$1
+0
+*14
+$5
+hmset
+$8
+kpyk22ks
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpyk22ks
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623792379287
+*2
+$6
+SELECT
+$1
+0
+*14
+$5
+hmset
+$8
+kpyktnsb
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpyktnsb
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623793666489
+*14
+$5
+hmset
+$8
+kpymd20q
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpymd20q
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623796251015
+*14
+$5
+hmset
+$8
+kpymokzy
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpymokzy
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623796788824
+*14
+$5
+hmset
+$8
+kpymp7ni
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpymp7ni
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623796818184
+*14
+$5
+hmset
+$8
+kpympl7y
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpympl7y
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623796835770
+*14
+$5
+hmset
+$8
+kpympsm8
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpympsm8
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623796845356
+*14
+$5
+hmset
+$8
+kpzy5ujg
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzy5ujg
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623876536318
+*14
+$5
+hmset
+$8
+kpzy6563
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzy6563
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623876550070
+*14
+$5
+hmset
+$8
+kpzy6c60
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzy6c60
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623876559138
+*14
+$5
+hmset
+$8
+kpzyp1nw
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzyp1nw
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877431991
+*14
+$5
+hmset
+$8
+kpzypbq1
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzypbq1
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877445031
+*14
+$5
+hmset
+$8
+kpzyqg2k
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzyqg2k
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877497320
+*14
+$5
+hmset
+$8
+kpzyqs2v
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzyqs2v
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877512900
+*14
+$5
+hmset
+$8
+kpzysv8t
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzysv8t
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877610294
+*14
+$5
+hmset
+$8
+kpzyt9ss
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzyt9ss
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877629160
+*14
+$5
+hmset
+$8
+kpzytr3d
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzytr3d
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877651569
+*14
+$5
+hmset
+$8
+kpzyud1z
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzyud1z
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877680036
+*14
+$5
+hmset
+$8
+kpzyz31d
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzyz31d
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877900330
+*14
+$5
+hmset
+$8
+kpzz075i
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz075i
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623877952318
+*18
+$5
+hmset
+$8
+kpzz075i
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz075i
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623877952318
+$19
+time_start_exp_preg
+$13
+1623877953725
+$9
+timestamp
+$13
+1623877965902
+*14
+$5
+hmset
+$8
+kpzz1ebs
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz1ebs
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878008274
+*14
+$5
+hmset
+$8
+kpzz5ntz
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz5ntz
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878207218
+*14
+$5
+hmset
+$8
+kpzz5qno
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz5qno
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878210876
+*14
+$5
+hmset
+$8
+kpzz6fks
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz6fks
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878243182
+*14
+$5
+hmset
+$8
+kpzz78x7
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz78x7
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878281208
+*140
+$5
+hmset
+$8
+kpzz78x7
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzz78x7
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878281207
+$19
+time_start_exp_preg
+$13
+1623878282174
+$7
+columns
+$10
+word,fruit
+$12
+posture_ans1
+$2
+11
+$12
+posture_ans2
+$2
+11
+$9
+timestamp
+$13
+1623878305488
+*14
+$5
+hmset
+$8
+kpzzbc1v
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzbc1v
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878471900
+*140
+$5
+hmset
+$8
+kpzzbc1v
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzbc1v
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878471899
+$19
+time_start_exp_preg
+$13
+1623878473226
+$7
+columns
+$10
+word,fruit
+$12
+posture_ans1
+$2
+22
+$12
+posture_ans2
+$2
+22
+$9
+timestamp
+$13
+1623878477073
+*144
+$5
+hmset
+$8
+kpzzbc1v
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzbc1v
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878471899
+$19
+time_start_exp_preg
+$13
+1623878473226
+$7
+columns
+$10
+word,fruit
+$12
+posture_ans1
+$2
+22
+$12
+posture_ans2
+$2
+22
+$14
+undefined_ans1
+$2
+22
+$14
+undefined_ans2
+$2
+22
+$9
+timestamp
+$13
+1623878497886
+*14
+$5
+hmset
+$8
+kpzzc4vu
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzc4vu
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878509254
+*140
+$5
+hmset
+$8
+kpzzc4vu
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzc4vu
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878509254
+$19
+time_start_exp_preg
+$13
+1623878510533
+$7
+columns
+$10
+word,fruit
+$12
+posture_ans1
+$2
+11
+$12
+posture_ans2
+$2
+11
+$9
+timestamp
+$13
+1623878513893
+*14
+$5
+hmset
+$8
+kpzzczr7
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzczr7
+$9
+scenario1
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878549264
+*16
+$5
+hmset
+$8
+kpzze9i4
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzze9i4
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878608552
+*142
+$5
+hmset
+$8
+kpzze9i4
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzze9i4
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878608551
+$19
+time_start_exp_preg
+$13
+1623878609602
+$7
+columns
+$10
+word,fruit
+$12
+disease_ans1
+$2
+33
+$12
+disease_ans2
+$2
+33
+$9
+timestamp
+$13
+1623878612363
+*146
+$5
+hmset
+$8
+kpzze9i4
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzze9i4
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878608551
+$19
+time_start_exp_preg
+$13
+1623878609602
+$7
+columns
+$10
+word,fruit
+$12
+disease_ans1
+$2
+33
+$12
+disease_ans2
+$2
+33
+$12
+posture_ans1
+$2
+22
+$12
+posture_ans2
+$2
+22
+$9
+timestamp
+$13
+1623878615915
+*16
+$5
+hmset
+$8
+kpzzgbs1
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzgbs1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623878704816
+*22
+$5
+hmset
+$8
+kpzzgbs1
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzgbs1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878704815
+$7
+speed75
+$4
+4000
+$13
+cali_dprime75
+$17
+3.686085258142238
+$9
+timestamp
+$13
+1623878850077
+*146
+$5
+hmset
+$8
+kpzzgbs1
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzgbs1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878704815
+$7
+speed75
+$4
+4000
+$13
+cali_dprime75
+$17
+3.686085258142238
+$19
+time_start_exp_preg
+$13
+1623878858616
+$7
+columns
+$10
+word,fruit
+$12
+disease_ans1
+$2
+33
+$12
+disease_ans2
+$2
+33
+$9
+timestamp
+$13
+1623878878030
+*150
+$5
+hmset
+$8
+kpzzgbs1
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzgbs1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878704815
+$7
+speed75
+$4
+4000
+$13
+cali_dprime75
+$17
+3.686085258142238
+$19
+time_start_exp_preg
+$13
+1623878858616
+$7
+columns
+$10
+word,fruit
+$12
+disease_ans1
+$2
+33
+$12
+disease_ans2
+$2
+33
+$12
+posture_ans1
+$2
+44
+$12
+posture_ans2
+$2
+44
+$9
+timestamp
+$13
+1623878881613
+*168
+$5
+hmset
+$8
+kpzzgbs1
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzgbs1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878704815
+$7
+speed75
+$4
+4000
+$13
+cali_dprime75
+$17
+3.686085258142238
+$19
+time_start_exp_preg
+$13
+1623878858616
+$7
+columns
+$10
+word,fruit
+$12
+disease_ans1
+$2
+33
+$12
+disease_ans2
+$2
+33
+$12
+posture_ans1
+$2
+44
+$12
+posture_ans2
+$2
+44
+$18
+time_start_nasatlx
+$13
+1623878881621
+$16
+time_end_nasatlx
+$13
+1623878886181
+$17
+time_diff_nasatlx
+$4
+4560
+$13
+mental_demand
+$1
+0
+$15
+physical_demand
+$1
+0
+$15
+temporal_demand
+$1
+0
+$11
+performance
+$1
+0
+$6
+effort
+$1
+0
+$11
+frustration
+$2
+20
+$9
+timestamp
+$13
+1623878886186
+*174
+$5
+hmset
+$8
+kpzzgbs1
+$1
+0
+$15
+[object Object]
+$1
+1
+$15
+[object Object]
+$1
+2
+$15
+[object Object]
+$1
+3
+$15
+[object Object]
+$1
+4
+$15
+[object Object]
+$1
+5
+$15
+[object Object]
+$1
+6
+$15
+[object Object]
+$1
+7
+$15
+[object Object]
+$1
+8
+$15
+[object Object]
+$1
+9
+$15
+[object Object]
+$2
+10
+$15
+[object Object]
+$2
+11
+$15
+[object Object]
+$2
+12
+$15
+[object Object]
+$2
+13
+$15
+[object Object]
+$2
+14
+$15
+[object Object]
+$2
+15
+$15
+[object Object]
+$2
+16
+$15
+[object Object]
+$2
+17
+$15
+[object Object]
+$2
+18
+$15
+[object Object]
+$2
+19
+$15
+[object Object]
+$2
+20
+$15
+[object Object]
+$2
+21
+$15
+[object Object]
+$2
+22
+$15
+[object Object]
+$2
+23
+$15
+[object Object]
+$2
+24
+$15
+[object Object]
+$2
+25
+$15
+[object Object]
+$2
+26
+$15
+[object Object]
+$2
+27
+$15
+[object Object]
+$2
+28
+$15
+[object Object]
+$2
+29
+$15
+[object Object]
+$2
+30
+$15
+[object Object]
+$2
+31
+$15
+[object Object]
+$2
+32
+$15
+[object Object]
+$2
+33
+$15
+[object Object]
+$2
+34
+$15
+[object Object]
+$2
+35
+$15
+[object Object]
+$2
+36
+$15
+[object Object]
+$2
+37
+$15
+[object Object]
+$2
+38
+$15
+[object Object]
+$2
+39
+$15
+[object Object]
+$2
+40
+$15
+[object Object]
+$2
+41
+$15
+[object Object]
+$2
+42
+$15
+[object Object]
+$2
+43
+$15
+[object Object]
+$2
+44
+$15
+[object Object]
+$2
+45
+$15
+[object Object]
+$2
+46
+$15
+[object Object]
+$2
+47
+$15
+[object Object]
+$2
+48
+$15
+[object Object]
+$2
+49
+$15
+[object Object]
+$2
+50
+$15
+[object Object]
+$2
+51
+$15
+[object Object]
+$2
+52
+$15
+[object Object]
+$2
+53
+$15
+[object Object]
+$2
+54
+$15
+[object Object]
+$2
+55
+$15
+[object Object]
+$2
+56
+$15
+[object Object]
+$2
+57
+$15
+[object Object]
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzgbs1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623878704815
+$7
+speed75
+$4
+4000
+$13
+cali_dprime75
+$17
+3.686085258142238
+$19
+time_start_exp_preg
+$13
+1623878858616
+$7
+columns
+$10
+word,fruit
+$12
+disease_ans1
+$2
+33
+$12
+disease_ans2
+$2
+33
+$12
+posture_ans1
+$2
+44
+$12
+posture_ans2
+$2
+44
+$18
+time_start_nasatlx
+$13
+1623878881621
+$16
+time_end_nasatlx
+$13
+1623878886181
+$17
+time_diff_nasatlx
+$4
+4560
+$13
+mental_demand
+$1
+0
+$15
+physical_demand
+$1
+0
+$15
+temporal_demand
+$1
+0
+$11
+performance
+$1
+0
+$6
+effort
+$1
+0
+$11
+frustration
+$2
+20
+$19
+time_end_experiment
+$13
+1623878903082
+$20
+time_diff_experiment
+$6
+198267
+$8
+comments
+$8
+test mel
+$9
+timestamp
+$13
+1623878918524
+*16
+$5
+hmset
+$8
+kpzzugy1
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzugy1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623879364698
+*22
+$5
+hmset
+$8
+kpzzugy1
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzugy1
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$21
+time_start_experiment
+$13
+1623879364697
+$7
+speed75
+$4
+4000
+$13
+cali_dprime75
+$18
+3.7915816687261885
+$9
+timestamp
+$13
+1623879519415
+*16
+$5
+hmset
+$8
+kpzzyjao
+$5
+bonus
+$1
+0
+$7
+bonuses
+$0
+
+$6
+postId
+$8
+kpzzyjao
+$9
+scenario1
+$7
+disease
+$9
+scenario2
+$7
+posture
+$10
+condition1
+$7
+vistext
+$9
+timestamp
+$13
+1623879554363
