@@ -87,7 +87,7 @@
 <script>
 
 // var scenarios=shuffle(["cab","disease","pregnancy","posture"])
-var scenarios=shuffle(["rolex"])
+var scenarios=shuffle(["dui"])
 var conditions=shuffle(["vistext"])
 
 // var conditions=shuffle(["vis","vis","vis","text","text","text","vistext","vistext","vistext"])
@@ -134,12 +134,13 @@ function shuffle(array) {
 }
 
 experimentr.sequence([
+  'modules/stims/static/static_grouped.html',
   'modules/consent.html',
   'modules/directions.html',
   // 'modules/stims/static/pregnancy_textvis_grouped.html',
   // 'modules/stims/static/diseaseX_vis_grouped.html',
   'modules/calibration.html',
-  'modules/stims/static/static_grouped.html',
+  //'modules/stims/static/static_grouped.html',
   'modules/custom_nasatlx.html',
   //'modules/trial-lottery.html',                
   //'modules/instructions-sectionI.html',    
