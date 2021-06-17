@@ -74,7 +74,8 @@ var data_vis_grouped= {
 "disease":[[1, 2, 3, 4],[5, 6],[7, 8, 9, 10, 11, 12, 13, 14, 24, 25, 26, 27, 28, 29, 30, 31]],
 "cab":[[1,2,3,4,5,6,7,8,9,10,11,12],[13,14,15,16,17,18, 19, 20, 21,22,23,24,25,26,27,28,29],[30, 31, 32, 33,34,35,36,37,38,39,40,41,42,43,44]],
 "posture":[[1,2],[3,4,5],[6, 7, 8, 9, 10, 11, 12, 13,25,26,27,28,29,30,31,32]],
-"rolex": [[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[21,22,23,24,25],[26,27,28,29,30,31,32,33,34,35,36,37,41,42,43,44,45,46,47,48,49,50,51,52,56,57,58,59,60,61,62,63,64,65,66,67,68,71,72,73,74,75,76,77,78,79,80,81,82,83]]
+"rolex": [[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[21,22,23,24,25],[26,27,28,29,30,31,32,33,34,35,36,37,41,42,43,44,45,46,47,48,49,50,51,52,56,57,58,59,60,61,62,63,64,65,66,67,68,71,72,73,74,75,76,77,78,79,80,81,82,83]],
+"childAccidents":[[1,2],[3,4,5],[6, 7, 8, 9, 10, 11, 12, 13,25,26,27,28,29,30,31,32]]
 //1st: orange guys within the yellow box
 //2nd: grey guys within the yellow box
 //3rd: orange guys as part of the blue box
@@ -197,6 +198,20 @@ function initialize(){
         document.getElementById("negative_text").innerHTML="Not executives"
         document.getElementById("test_positive_text").innerHTML="Wears Rolex"
         document.getElementById("test_negative_text").innerHTML="Watch wearers"
+        width = 159; //vertical space between icons in yellow box
+        width2 = 530; 
+        height = 250; //height of svg for yellow box
+        height2 = 250;   
+        icon_width = 5; //number of columns in yellow box
+        icon_width2 = 15; //number of columns in blue box
+    }
+    if (scenario=="childAccidents"){
+        document.getElementById("intro").innerHTML=intros["childAccidents"]
+        document.getElementById("problem_text").innerHTML=problem_text["childAccidents"]
+        document.getElementById("positive_text").innerHTML="Involved in an accident"
+        document.getElementById("negative_text").innerHTML="Not involved in an accident"
+        document.getElementById("test_positive_text").innerHTML="Lives in an urban area"
+        document.getElementById("test_negative_text").innerHTML="Does not live in an urban area"
         width = 159; //vertical space between icons in yellow box
         width2 = 530; 
         height = 250; //height of svg for yellow box
