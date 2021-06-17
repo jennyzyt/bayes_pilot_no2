@@ -75,7 +75,7 @@ var data_vis_grouped= {
 "cab":[[1,2,3,4,5,6,7,8,9,10,11,12],[13,14,15,16,17,18, 19, 20, 21,22,23,24,25,26,27,28,29],[30, 31, 32, 33,34,35,36,37,38,39,40,41,42,43,44]],
 "posture":[[1,2],[3,4,5],[6, 7, 8, 9, 10, 11, 12, 13,25,26,27,28,29,30,31,32]],
 "rolex": [[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[21,22,23,24,25],[26,27,28,29,30,31,32,33,34,35,36,37,41,42,43,44,45,46,47,48,49,50,51,52,56,57,58,59,60,61,62,63,64,65,66,67,68,71,72,73,74,75,76,77,78,79,80,81,82,83]],
-"dui":[[1,2,3,4,6,7,8],[5,9,10],[11,12,13,14,15,16,17,18, 29,30,31,32,33,34,35,36, 47,48,49,50,51,52,53,54, 65,66,67,68,69,70,71,72]]
+"dui":[[1,2,3,4,5,6,7],[8,9,10],[11,12,13,14,15,16,17,18, 29,30,31,32,33,34,35,36, 47,48,49,50,51,52,53,54, 65,66,67,68,69,70,71,72]]
 //1st: orange guys within the yellow box
 //2nd: grey guys within the yellow box
 //3rd: orange guys as part of the blue box
@@ -116,7 +116,7 @@ var false_alarm=0;
 var d_prime=0;
 
 var speed=experimentr.getData().speed75
-// var speed=4000
+var speed=4000
 
 function initialize(){
     console.log("scenario_num is ",scenario_num)
@@ -212,12 +212,12 @@ function initialize(){
         document.getElementById("negative_text").innerHTML="Not serious"
         document.getElementById("test_positive_text").innerHTML="Caused by drunk driver"
         document.getElementById("test_negative_text").innerHTML="Not caused by drunk driver"
-        width = 172; //vertical space between icons in yellow box
-        width2 = 670; 
-        height = 250; //height of svg for yellow box
-        height2 = 275;   
-        icon_width = 1; //number of columns in yellow box
-        icon_width2 = 19; //number of columns in blue box
+        width = 175; //vertical space between icons in yellow box
+        width2 = 635; 
+        height = 275; //height of svg for yellow box
+        height2 = 275;
+        icon_width = 2; //number of columns in yellow box
+        icon_width2 = 18; //number of columns in blue box
     }
     if (condition=="text"){
         document.getElementById('labels').style.display="none"
