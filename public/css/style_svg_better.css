@@ -23,7 +23,19 @@
     fill: red; 
     padding: 0; 
 }
-
+#submit-button {
+  float: right;
+  background-color: 'grey';
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 #checks_dir {
   padding-top: 10px;
   padding-bottom: 10px;

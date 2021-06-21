@@ -78,7 +78,7 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-	
+
 
 </style>
 
@@ -87,32 +87,38 @@
 <script>
 
 // var scenarios=shuffle(["cab","disease","pregnancy","posture"])
-var scenarios="cookies" + shuffle(["disease","cab"])
-var conditions=shuffle(["vistext"])
+var scenarios=shuffle(["admissions","cab","disease","pregnancy","posture","dui","rolex","childAccidents","class"])
+scenarios.splice(0, 0, "cookies");
+var conditions=shuffle(["vistext","vistext","vistext","vis","vis","vis","text","text","text"])
+conditions.splice(0, 0, "vistext");
 
 // var conditions=shuffle(["vis","vis","vis","text","text","text","vistext","vistext","vistext"])
 
 var scenario;
-var data = {} 
+var data = {}
 
+data["scenarios"]=scenarios
+data["conditions"]=conditions
+
+console.log("scenarios are ",scenarios)
+console.log("conditions are ",conditions)
 // (function() {
-//     experimentr.hideNext(); 
+//     experimentr.hideNext();
 //     selectStim();
-// })(); 
- 
+// })();
+
 selectStim()
 
 function selectStim() {
 
 
-    for (i in scenarios){
-      data["scenario"+(parseInt(i)+1)]=scenarios[i]
-    }
-    for (i in conditions){
-      data["condition"+(parseInt(i)+1)]=conditions[i]
-    }
+    // for (i in scenarios){
+    //   data["scenario"+(parseInt(i))]=scenarios[i]
+    // }
+    // for (i in conditions){
+    //   data["condition"+(parseInt(i))]=conditions[i]
+    // }
     experimentr.addData(data)
-    console.log("data is ",experimentr.getData())
 }
 
 function shuffle(array) {
@@ -132,18 +138,18 @@ function shuffle(array) {
   }
   return array;
 }
-
+console.log("data is ",experimentr.getData())
 experimentr.sequence([
+  // 'modules/consent.html',
+  // 'modules/directions.html',
   'modules/stims/static/static_grouped.html',
-  'modules/consent.html',
-  'modules/directions.html',
+  // 'modules/custom_nasatlx.html',
   // 'modules/stims/static/pregnancy_textvis_grouped.html',
   // 'modules/stims/static/diseaseX_vis_grouped.html',
-  'modules/calibration.html',
+  // 'modules/calibration.html',
   //'modules/stims/static/static_grouped.html',
-  'modules/custom_nasatlx.html',
-  //'modules/trial-lottery.html',                
-  //'modules/instructions-sectionI.html',    
+  //'modules/trial-lottery.html',
+  //'modules/instructions-sectionI.html',
   // 'modules/dual_main-task.html',
   // 'modules/feedback_slow_task.html',
   // 'modules/feedback_fast_task.html',
@@ -154,8 +160,8 @@ experimentr.sequence([
   // 'modules/spatial-rest.html',
   // 'modules/spatial-second.html',
   // //'modules/exp/',
-  // //'modules/bonus.html',            
-  // 'modules/demographics.html',  
-  'modules/debrief.html'  
+  // //'modules/bonus.html',
+  // 'modules/demographics.html',
+  'modules/debrief.html'
 ]).start();
 </script>
