@@ -703,6 +703,11 @@ var moves = [];
 
 
 function draw_secondary(data_part2) {
+    if (window.innerWidth < 50 || window.innerHeight < 100) { //If screen size is too small, don't let user take study
+        console.log("Screen size too small, cannot participate in study");
+        //TODO: Make this tell the user they can't take the study and exit elegantly. Also maybe put this somewhere else.
+        return
+    }
 
     var step=17;
     var lineupCount=1;
