@@ -35,7 +35,7 @@
 </div>
 
 <!--controls empty space around vis-->
-<iframe id="nasatlx_iframe" width="1000" height="2000" frameBorder="0"></iframe> 
+<iframe id="nasatlx_iframe" width="1000" height="2000" frameBorder="0"></iframe>
 
 
 <script type="text/javascript">
@@ -183,12 +183,27 @@ var speed=4000
 
 window.addEventListener("message", (event) => {
         if (scenario_num==experimentr.getData().scenarios.length){
+            data["totalBonus"]=totalBonus
             experimentr.addData(data)
             experimentr.next()
         }
         else{
         console.log("event")
         console.log("message works")
+        scenario_prev=experimentr.getData().scenarios[scenario_num-1]
+        console.log(scenario_prev)
+        console.log(event.data[scenario_prev+"_mental_demand"])
+        console.log(event.data[scenario_prev+"_percent_task1"])
+
+        data[scenario_prev+"_percent_task1"]=event.data[scenario_prev+"_percent_task1"]
+        data[scenario_prev+"_mental_demand"]=event.data[scenario_prev+"_mental_demand"]
+        data[scenario_prev+"_effort"]=event.data[scenario_prev+"_effort"]
+        data[scenario_prev+"_frustration"]=event.data[scenario_prev+"_frustration"]
+        if (condition=="vistext"){
+          data[scenario_prev+"_percent_text_vis"]=event.data[scenario_prev+"_percent_text_vis"]
+
+        }
+        experimentr.addData(data)
         document.getElementById("task").style.display="block"
         document.getElementById("see_questions").style.display="block"
         // document.getElementById("answers").style.display="none"
@@ -204,7 +219,7 @@ window.addEventListener("message", (event) => {
     }, false);
 
     window.addEventListener("click", (event) => { //If the window is too small, make an alert and only let the user continue if they increase the window size
-        if (window.innerHeight < 300 || window.innerWidth < 100){ //min window height and width, TODO: pick less arbitrary numbers
+        if (window.innerHeight < 800 || window.innerWidth < 800){ //min window height and width, TODO: pick less arbitrary numbers
             console.log("event")
             console.log("screen too small")
             alert("Please increase window size to continue study");
