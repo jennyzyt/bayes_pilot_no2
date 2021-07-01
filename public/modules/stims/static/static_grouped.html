@@ -816,19 +816,19 @@ function draw_secondary(data_part2) {
 
         // var borderSelect =
 
-        var border=svg.selectAll("#word_border2")
+        var border=svg.selectAll("#word_border2") //controls sliding words box
                     .data(lineup)
                     .enter()
                     .append("rect")
                     .attr("padding",0.5)
-                    .attr('stroke', '#bebebe')
-                    .attr('stroke-width', '1.2px')
+                    .attr('stroke', '#bebebe') //sets box border color
+                    .attr('stroke-width', '1.2px') //sets box border thickness
                     .attr("class", "word_border")
                     .attr("id", "word_border2")
-                    .attr("fill","#F5F5F5")
-                    .attr("opacity",0.75)
-                    .attr("rx", 4)
-                    .attr("ry", 4)
+                    .attr("fill","#F5F5F5") //sets box fill color
+                    .attr("opacity",.75) //sets box opacity - 0 is invisible
+                    .attr("rx", 4) //sets curve of the box border
+                    .attr("ry", 4) //sets curve of box border
 
         border.attr("x", function(d,i){
                 // return (i%7)*150-200
