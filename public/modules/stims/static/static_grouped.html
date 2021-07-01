@@ -339,9 +339,9 @@ function initialize(){
         document.getElementById("test_positive_text").innerHTML="Lives in an urban area"
         document.getElementById("test_negative_text").innerHTML="Does not live in an urban area"
         width = 103; //vertical space between icons in yellow box
-        width2 = 600;
+        width2 = 600; //horizontal space between icons in blue box
         height = 220; //height of svg for yellow box
-        height2 = 220;
+        height2 = 220; //space before "I am ready to see the question" box
         icon_width = 1; //number of columns in yellow box
         icon_width2 = 17; //number of columns in blue box
     }
@@ -753,7 +753,7 @@ function draw_secondary(data_part2) {
                         .text(" ")
                         .attr("visibility","hidden")
 
-    var cyanScore= svgContainer.append("text") //shows number of correct words, currently not shown
+    var cyanScore= svgContainer.append("text") //shows number of correct words, currently not visible
                         .attr("id","cyanScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
