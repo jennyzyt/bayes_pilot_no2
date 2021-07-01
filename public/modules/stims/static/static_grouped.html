@@ -477,7 +477,7 @@ function draw_start() {
                 .enter()
             .append('rect')
                 .attr('transform', function(d) {
-                    return 'translate(' + (arrayScale(d.position.x))*0.95 + ',' + (arrayScale(d.position.y))*0.95 + ')';
+                    return 'translate(' + (arrayScale(d.position.x))*0.95 + ',' + (arrayScale(d.position.y))*0.95 + ')'; //position of yellow rect (x,y)
                 })
                 .attr('class', function(d) {
                     if (data_num_positive_test_positive.includes(d.data)) {
@@ -496,7 +496,7 @@ function draw_start() {
                 .enter()
             .append('g')
                 .attr('transform', function(d) {
-                    return 'translate(' + (arrayScale(d.position.x) + 11) + ',' + (arrayScale(d.position.y) + 4) + ')';
+                    return 'translate(' + (arrayScale(d.position.x) + 11) + ',' + (arrayScale(d.position.y) + 4) + ')'; //position of yellow ppl (x,y)
                 })
             .call(function(parent) {
                 parent.append('use')
