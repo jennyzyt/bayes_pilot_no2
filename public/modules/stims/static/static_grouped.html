@@ -731,14 +731,14 @@ function draw_secondary(data_part2) {
                 .attr("width",svgWidth+5)
                 .attr("fill","#FAFAFA")
 
-  var ready_go= svgContainer.append("text")
+  var ready_go= svgContainer.append("text") //controls the "ready set go" text
                         .attr("id","ready_go")
                         .attr("fill","#F5F5F5")
-                        .attr("x",svgWidth/2)
-                        .attr("y",(svgHeight/2)-10)
+                        .attr("x",svgWidth/2) //makes the ready set go appear centered horizontally
+                        .attr("y",(svgHeight/2)-10) //makes the ready set go appear centered vertically
                         .text("Ready")
                         .attr("fill","darkgrey")
-                        .style("font-size","28px")
+                        .style("font-size","28px") //sets the ready set go font size
                         .transition()
                         .duration(speed/2)
                         .text("Ready")
@@ -753,7 +753,7 @@ function draw_secondary(data_part2) {
                         .text(" ")
                         .attr("visibility","hidden")
 
-    var cyanScore= svgContainer.append("text")
+    var cyanScore= svgContainer.append("text") 
                         .attr("id","cyanScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -763,7 +763,7 @@ function draw_secondary(data_part2) {
                         .style("font-size","14px")
                         .attr("visibility","hidden")
 
-    var magentaScore= svgContainer.append("text")
+    var magentaScore= svgContainer.append("text") 
                         .attr("id","magentaScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
