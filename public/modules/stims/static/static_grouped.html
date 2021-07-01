@@ -11,6 +11,7 @@
             <br>
             <div id="problem_text" align="left">
             </div>
+            <!--controls space around the four labels above the image-->
             <div class="shelf" id="labels">
               <span id="positive_text" style="margin:5px"></span>
               <span id="negative_text" style="margin:5px"></span>
@@ -33,13 +34,14 @@
     <div  id ="submit_button"></div>
 </div>
 
-<iframe id="nasatlx_iframe" width="1000" height="2000" frameBorder="0"></iframe>
+<!--controls empty space around vis-->
+<iframe id="nasatlx_iframe" width="1000" height="2000" frameBorder="0"></iframe> 
 
 
 <script type="text/javascript">
 //=======primary task global variables========
 
-var ans1={
+var ans1={ //answers to the first question
    "pregnancy":20,
     "disease": 20,
     "posture":20,
@@ -52,7 +54,7 @@ var ans1={
     "cookies": 38
 
 }
-var ans2={
+var ans2={ //answers to the second question
    "pregnancy":18,
     "disease": 4,
     "posture":2,
@@ -64,7 +66,7 @@ var ans2={
     "admission":27 ,
     "cookies": 11
 }
-var q1={
+var q1={ //first question text
    "pregnancy":"How many people will test positive?",
     "disease": "How many people will test positive?",
     "posture":"How many students will carry all their books to school?",
@@ -78,7 +80,7 @@ var q1={
 
 }
 
-var q2={
+var q2={ //second question text
    "pregnancy":"Of those who test positive, how many are actually pregnant?" ,
     "disease":  "Of those who test positive, how many actually have the disease?",
     "posture":"Of those who carry all their books to school, how many will have bad posture?",
@@ -139,8 +141,8 @@ var data_vis_grouped= {
 //3rd: orange guys as part of the blue box
 }
 
-var margin = {top:10, bottom:0, left:0, right:0};
-var icon_scale = '0.05';  //this makes icons 13.44 X 35.84
+var margin = {top:10, bottom:0, left:0, right:0}; //top margin controls how close image is to line above
+var icon_scale = '.05';  //this makes the people 13.44 X 35.84
 var scenario_num=0;
 var condition_num=0;
 
@@ -201,6 +203,14 @@ window.addEventListener("message", (event) => {
       // ...
     }, false);
 
+    window.addEventListener("click", (event) => { //If the window is too small, make an alert and only let the user continue if they increase the window size
+        if (window.innerHeight < 300 || window.innerWidth < 100){ //min window height and width, TODO: pick less arbitrary numbers
+            console.log("event")
+            console.log("screen too small")
+            alert("Please increase window size to continue study");
+        }
+        return;
+    }, false);
 
 d3.select("#nasatlx_iframe").style("visibility","hidden")
 
@@ -339,9 +349,9 @@ function initialize(){
         document.getElementById("test_positive_text").innerHTML="Lives in an urban area"
         document.getElementById("test_negative_text").innerHTML="Does not live in an urban area"
         width = 103; //vertical space between icons in yellow box
-        width2 = 600;
+        width2 = 600; //horizontal space between icons in blue box
         height = 220; //height of svg for yellow box
-        height2 = 220;
+        height2 = 220; //space before "I am ready to see the question" box
         icon_width = 1; //number of columns in yellow box
         icon_width2 = 17; //number of columns in blue box
     }
@@ -409,8 +419,8 @@ function checks() {
         .append('svg')
             .attr('id', 'test')
             .attr('width', width + width2)
-            .attr('height', height2)
-            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+            .attr('height', height2) //controls how close the "I am ready to see the next question" button appears
+            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')'); //controls where on the screen the image appears
 
     //append svg defs
     d3.select('#defs')
@@ -477,7 +487,7 @@ function draw_start() {
                 .enter()
             .append('rect')
                 .attr('transform', function(d) {
-                    return 'translate(' + (arrayScale(d.position.x))*0.95 + ',' + (arrayScale(d.position.y))*0.95 + ')';
+                    return 'translate(' + (arrayScale(d.position.x))*0.95 + ',' + (arrayScale(d.position.y))*0.95 + ')'; //position of yellow rect (x,y)
                 })
                 .attr('class', function(d) {
                     if (data_num_positive_test_positive.includes(d.data)) {
@@ -496,7 +506,7 @@ function draw_start() {
                 .enter()
             .append('g')
                 .attr('transform', function(d) {
-                    return 'translate(' + (arrayScale(d.position.x) + 11) + ',' + (arrayScale(d.position.y) + 4) + ')';
+                    return 'translate(' + (arrayScale(d.position.x) + 11) + ',' + (arrayScale(d.position.y) + 4) + ')'; //position of yellow ppl (x,y)
                 })
             .call(function(parent) {
                 parent.append('use')
@@ -544,7 +554,7 @@ function draw_start() {
                 .enter()
             .append('rect')
                 .attr('transform', function(d) {
-                    return 'translate(' + (arrayScale2(d.position.x) + 40*icon_width)*0.99 + ',' + (arrayScale2(d.position.y))*0.99 + ')';
+                    return 'translate(' + (arrayScale2(d.position.x) + 40*icon_width)*0.99 + ',' + (arrayScale2(d.position.y))*0.99 + ')'; //position of blue rect (x,y)
                 })
                 .attr('class', function(d) {
                     if (data_num_positive_test_positive.includes(d.data)) {
@@ -563,7 +573,7 @@ function draw_start() {
                 .enter()
             .append('g')
                 .attr('transform', function(d) {
-                    return 'translate(' + (arrayScale2(d.position.x) + ((40*icon_width)+10)) + ',' + (arrayScale2(d.position.y) + 4) + ')';
+                    return 'translate(' + (arrayScale2(d.position.x) + ((40*icon_width)+10)) + ',' + (arrayScale2(d.position.y) + 4) + ')'; //position of ppl in blue rect (x,y)
                 })
             .call(function(parent) {
                 parent.append('use')
@@ -726,14 +736,14 @@ function draw_secondary(data_part2) {
                 .attr("width",svgWidth+5)
                 .attr("fill","#FAFAFA")
 
-  var ready_go= svgContainer.append("text")
+  var ready_go= svgContainer.append("text") //controls the "ready set go" text
                         .attr("id","ready_go")
                         .attr("fill","#F5F5F5")
-                        .attr("x",svgWidth/2)
-                        .attr("y",(svgHeight/2)-10)
+                        .attr("x",svgWidth/2) //makes the ready set go appear centered horizontally
+                        .attr("y",(svgHeight/2)-10) //makes the ready set go appear centered vertically
                         .text("Ready")
                         .attr("fill","darkgrey")
-                        .style("font-size","28px")
+                        .style("font-size","28px") //sets the ready set go font size
                         .transition()
                         .duration(speed/2)
                         .text("Ready")
@@ -748,7 +758,7 @@ function draw_secondary(data_part2) {
                         .text(" ")
                         .attr("visibility","hidden")
 
-    var cyanScore= svgContainer.append("text")
+    var cyanScore= svgContainer.append("text") //shows number of correct words, currently not visible
                         .attr("id","cyanScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -758,7 +768,7 @@ function draw_secondary(data_part2) {
                         .style("font-size","14px")
                         .attr("visibility","hidden")
 
-    var magentaScore= svgContainer.append("text")
+    var magentaScore= svgContainer.append("text") //shows number of incorrect words, currently not visible
                         .attr("id","magentaScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -768,7 +778,7 @@ function draw_secondary(data_part2) {
                         .style("font-size","14px")
                         .attr("visibility","hidden")
 
-    var yellowScore= svgContainer.append("text")
+    var yellowScore= svgContainer.append("text") //shows number of missed words, currently not visible
                         .attr("id","yellowScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -782,8 +792,8 @@ function draw_secondary(data_part2) {
 
 
     let svg = svgContainer.append("svg")
-    .attr("width", svgWidth)
-    .attr("height", svgHeight)
+    .attr("width", svgWidth) //sets the box in which the sliding words are visible horizontally
+    .attr("height", svgHeight) //sets the box in which the sliding words are visible vertically
     .attr("id", "second_svg");
 
 
@@ -807,23 +817,23 @@ function draw_secondary(data_part2) {
         console.log("lineup is ",lineup)
 
         // var xCoord=-60
-         var xCoord=5
+         var xCoord=5 //sets relative x placement of words in boxes
 
         // var borderSelect =
 
-        var border=svg.selectAll("#word_border2")
+        var border=svg.selectAll("#word_border2") //controls sliding words box
                     .data(lineup)
                     .enter()
                     .append("rect")
-                    .attr("padding",0.5)
-                    .attr('stroke', '#bebebe')
-                    .attr('stroke-width', '1.2px')
+                    .attr("padding",.5)
+                    .attr('stroke', '#bebebe') //sets box border color
+                    .attr('stroke-width', '1.2px') //sets box border thickness
                     .attr("class", "word_border")
                     .attr("id", "word_border2")
-                    .attr("fill","#F5F5F5")
-                    .attr("opacity",0.75)
-                    .attr("rx", 4)
-                    .attr("ry", 4)
+                    .attr("fill","#F5F5F5") //sets box fill color
+                    .attr("opacity",.75) //sets box opacity - 0 is invisible
+                    .attr("rx", 4) //sets curve of the box border
+                    .attr("ry", 4) //sets curve of box border
 
         border.attr("x", function(d,i){
                 // return (i%7)*150-200
