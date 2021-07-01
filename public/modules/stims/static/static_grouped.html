@@ -203,6 +203,14 @@ window.addEventListener("message", (event) => {
       // ...
     }, false);
 
+    window.addEventListener("click", (event) => { //If the window is too small, make an alert and only let the user continue if they increase the window size
+        if (window.innerHeight < 300 || window.innerWidth < 100){ //min window height and width, TODO: pick less arbitrary numbers
+            console.log("event")
+            console.log("screen too small")
+            alert("Please increase window size to continue study");
+        }
+        return;
+    }, false);
 
 d3.select("#nasatlx_iframe").style("visibility","hidden")
 
