@@ -763,7 +763,7 @@ function draw_secondary(data_part2) {
                         .style("font-size","14px")
                         .attr("visibility","hidden")
 
-    var magentaScore= svgContainer.append("text") //shows number of incorrect words, currently not shown
+    var magentaScore= svgContainer.append("text") //shows number of incorrect words, currently not visible
                         .attr("id","magentaScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -773,7 +773,7 @@ function draw_secondary(data_part2) {
                         .style("font-size","14px")
                         .attr("visibility","hidden")
 
-    var yellowScore= svgContainer.append("text") //shows number of missed words, currently not shown
+    var yellowScore= svgContainer.append("text") //shows number of missed words, currently not visible
                         .attr("id","yellowScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -812,7 +812,7 @@ function draw_secondary(data_part2) {
         console.log("lineup is ",lineup)
 
         // var xCoord=-60
-         var xCoord=5
+         var xCoord=5 //sets relative x placement of words in boxes
 
         // var borderSelect =
 
@@ -820,7 +820,7 @@ function draw_secondary(data_part2) {
                     .data(lineup)
                     .enter()
                     .append("rect")
-                    .attr("padding",0.5)
+                    .attr("padding",.5)
                     .attr('stroke', '#bebebe') //sets box border color
                     .attr('stroke-width', '1.2px') //sets box border thickness
                     .attr("class", "word_border")
