@@ -41,7 +41,7 @@
 <script type="text/javascript">
 //=======primary task global variables========
 
-var ans1={
+var ans1={ //answers to the first question
    "pregnancy":20,
     "disease": 20,
     "posture":20,
@@ -54,7 +54,7 @@ var ans1={
     "cookies": 38
 
 }
-var ans2={
+var ans2={ //answers to the second question
    "pregnancy":18,
     "disease": 4,
     "posture":2,
@@ -66,7 +66,7 @@ var ans2={
     "admission":27 ,
     "cookies": 11
 }
-var q1={
+var q1={ //first question text
    "pregnancy":"How many people will test positive?",
     "disease": "How many people will test positive?",
     "posture":"How many students will carry all their books to school?",
@@ -80,7 +80,7 @@ var q1={
 
 }
 
-var q2={
+var q2={ //second question text
    "pregnancy":"Of those who test positive, how many are actually pregnant?" ,
     "disease":  "Of those who test positive, how many actually have the disease?",
     "posture":"Of those who carry all their books to school, how many will have bad posture?",
@@ -411,8 +411,8 @@ function checks() {
         .append('svg')
             .attr('id', 'test')
             .attr('width', width + width2)
-            .attr('height', height2)
-            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+            .attr('height', height2) //controls how close the "I am ready to see the next question" button appears
+            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')'); //controls where on the screen the image appears
 
     //append svg defs
     d3.select('#defs')
