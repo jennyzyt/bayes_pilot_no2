@@ -753,7 +753,7 @@ function draw_secondary(data_part2) {
                         .text(" ")
                         .attr("visibility","hidden")
 
-    var cyanScore= svgContainer.append("text") 
+    var cyanScore= svgContainer.append("text") //shows number of correct words, currently not shown
                         .attr("id","cyanScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -763,7 +763,7 @@ function draw_secondary(data_part2) {
                         .style("font-size","14px")
                         .attr("visibility","hidden")
 
-    var magentaScore= svgContainer.append("text") 
+    var magentaScore= svgContainer.append("text") //shows number of incorrect words, currently not shown
                         .attr("id","magentaScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
@@ -773,7 +773,7 @@ function draw_secondary(data_part2) {
                         .style("font-size","14px")
                         .attr("visibility","hidden")
 
-    var yellowScore= svgContainer.append("text")
+    var yellowScore= svgContainer.append("text") //shows number of missed words, currently not shown
                         .attr("id","yellowScore")
                         .attr("fill","#F5F5F5")
                         .attr("x",svgWidth+40)
