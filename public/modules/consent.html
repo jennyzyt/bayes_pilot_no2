@@ -83,15 +83,17 @@ to take this HIT again at this time. Please contact us if you feel this is in er
 
 </style>
 
-<script src="modules/index.js"></script>
-<script type="text/javascript">
+<!-- <script src="modules/index.js"></script>
+ -->
+ <script type="text/javascript">
+ 	d3.select("#disqualified_iframe").style("display","none")
 
 	window.addEventListener("mouseover", (event) => { //If the window is too small, make an alert and only let the user continue if they increase the window size
 			// console.log(event)
-			if (window.innerHeight < 700 || window.innerWidth < 700){ //change to screen size
+			if (screen.height < 1024 || screen.width < 768){ //change to screen size
 				console.log("screen too small")
-				d3.select("#consent").style("visibility","hidden")
-				d3.select("#disqualified_iframe").style("visibility","visible").attr('src', `modules/disqualified.html`)
+				d3.select("#consent").style("display","block")
+				d3.select("#disqualified_iframe").style("display","block").attr('src', `modules/disqualified.html`)
 
 			}
 			return;
@@ -101,13 +103,9 @@ to take this HIT again at this time. Please contact us if you feel this is in er
 
 	d3.select("#consentYes").attr("disabled",null)
 
-	d3.select("#disqualified_iframe").style("visibility","hidden")
-
-
-
 	// d3.select('#consentYes').attr('disabled', null);
-	// d3.select('#consentYes').on("click",function(){
-	// 	experimentr.hideNext();
+	d3.select('#consentYes').on("click",function(){
+		experimentr.next();
 	// 	console.log("consent clicked")
 	// 	if (window.innerHeight<700){
 	// 		alert("window too small")
@@ -115,6 +113,6 @@ to take this HIT again at this time. Please contact us if you feel this is in er
 	// 	else{
 	// 		this.attr('disabled', null)
 	// 	}
-	// })
+	})
 
 </script>
