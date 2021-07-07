@@ -7,7 +7,7 @@ var express     = require('express')
   , http        = require('http')
   , redis       = require('redis')
   , redisClient
-  , port        = process.argv[2] || 8003
+  , port        = process.argv[2] || 8001
   , rport       = process.argv[3] || 6380
   , debug       = process.argv[4] || null
 
