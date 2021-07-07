@@ -43,8 +43,10 @@
       if(experimentr.get_current() == 'modules/spatial-first.html'){
         experimentr.endTimer('spatial-first');
         grade();
+        experimentr.addBonus(data.spatialFirst_numCorrect*0.1)
+        experimentr.addBonuses(data.spatialFirst_numCorrect*0.1,11)
         experimentr.addData(data);
-        experimentr.addPayment(data.spatialFirst_numCorrect);
+        // experimentr.addPayment(data.spatialFirst_numCorrect);
         experimentr.next();
       }
     });
@@ -52,10 +54,14 @@
     //overrides onNext from experimentr
     d3.select('#next-button')
       .on('click', function(){
+        console.log("next spatial clicked")
         experimentr.endTimer('spatial-first');
         grade();
         experimentr.addData(data);
-        experimentr.addPayment(data.spatialFirst_numCorrect);
+        experimentr.addBonus(data.spatialFirst_numCorrect*0.1)
+        experimentr.addBonuses(data.spatialFirst_numCorrect*0.1,11)
+        console.log("spatial data is ",experimentr.getData())
+        // experimentr.addPayment(data.spatialFirst_numCorrect);
         experimentr.next();
     });
     

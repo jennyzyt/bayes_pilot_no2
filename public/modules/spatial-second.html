@@ -49,17 +49,23 @@
 	  		experimentr.endTimer('spatial-second');
 	  		grade();
       	experimentr.addData(data);
-      	experimentr.addPayment(data.spatialSecond_numCorrect);
+       	experimentr.addBonus(data.spatialSecond_numCorrect*0.1)
+      	experimentr.addBonuses(data.spatialSecond_numCorrect*0.1,12)
+      	// experimentr.addPayment(data.spatialSecond_numCorrect);
 	  		experimentr.next();
 	  	}
    	});
    	
    	d3.select('#next-button')
       .on('click', function(){
+      	console.log("spatial second clicked")
       	experimentr.endTimer('spatial-second');
       	grade();
         experimentr.addData(data);
-        experimentr.addPayment(data.spatialSecond_numCorrect);
+       	experimentr.addBonus(data.spatialSecond_numCorrect*0.1)
+      	experimentr.addBonuses(data.spatialSecond_numCorrect*0.1,12)
+      	console.log("spatial2 data is ",experimentr.getData())
+        // experimentr.addPayment(data.spatialSecond_numCorrect);
         experimentr.next();
     	});
     	

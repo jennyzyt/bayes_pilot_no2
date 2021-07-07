@@ -185,6 +185,8 @@ var speed=experimentr.getData().speed75
 window.addEventListener("message", (event) => {
         if (scenario_num==experimentr.getData().scenarios.length){
             data["totalBonus"]=totalBonus
+            experimentr.addBonus(totalBonus)
+            data["bonuses"]=experimentr.getBonuses()
             experimentr.addData(data)
             experimentr.next()
         }
@@ -1144,8 +1146,8 @@ function validate() {
                 //hide task
                 document.getElementById("task").style.display="none"
 
-
-                data[scenario+"_bonus"]=bonus
+                experimentr.addBonuses(bonus, scenario_num)
+                // data[scenario+"_bonus"]=bonus
                 experimentr.addData()
                 console.log("data now is ",experimentr.getData())
 
@@ -1156,22 +1158,6 @@ function validate() {
         }
 
  }
-
-  function calculate_bonus(){
-    console.log("in calculate_bonus")
-    //determine bonus
-
-    if ((data.ans1 == 20) & (data.ans2 == 18)){ //right answer
-        var bonus=0.5
-    }
-    else{
-        var bonus=0
-    }
-    data.bonus=bonus
-    experimentr.addBonus(bonus);
-    console.log(experimentr.getData())
-    experimentr.addData(data);
-  }
 
 function showQ() {
         document.getElementById('answers').innerHTML = '<p>(a)'+ q1[scenario]+'<input type="number" id="ans1"><br>(b)' + q2[scenario] + '<input type="number" id="ans2">.</p>';

@@ -32,8 +32,9 @@
   experimentr.getBonuses().forEach(function(d, i){
     
     tr = table.append('div');
+    tr.html('Sheet ' + (i+1) + ' &nbsp&nbsp&nbsp&nbsp     <b>$' + d+ '</b>');
 
-    tr.html('Sheet ' + (i+1) + ' &nbsp&nbsp&nbsp&nbsp     <b>$' + (d/100).toFixed(2) + '</b>');
+    // tr.html('Sheet ' + (i+1) + ' &nbsp&nbsp&nbsp&nbsp     <b>$' + (d/100).toFixed(2) + '</b>');
   });
 
   tr = table.append('div');
