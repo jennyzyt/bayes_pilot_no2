@@ -15,7 +15,9 @@
 </style>
 
 <script>
-	
+console.log("test")
+
+
 //=====CHANGE DETECTION TEST======
 //SHOW A STUDY DISPLAY: AN ARRAY OF SQUARES OF DIFFERENT COLORS
 //SHOW A BLANK SCREEN
@@ -39,13 +41,41 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 
 
 function drawRects(){
-
+	d3.select('svg')
+		.selectAll('rect')
+		.data(rect1)
+		.enter()
+		.append('rect')
+		.attr('x',function(d){
+			console.log("d is ",d)
+			return d
+		})
+		.attr('y',20)
+		.attr('width',40)
+		.attr('height',40)
+		.attr("fill",function(d,i){
+			return colorArray[i+trialNum]
+		})
+	timeout = setTimeout(greyScreen, 1000)
 }
 function greyScreen(){
+	d3.select('svg')
+		.append('rect')
+		.attr('x',20)
+		.attr('y',20)
+		.attr('width',600)
+		.attr('height',600)
+		.attr("fill","lightgrey")
 
+	visualQuestion()
 }
 function visualQuestion(){
-
+	var currArray=[]
+	for (i=0; i<6; i++){
+		currArray.push(i+trialNum)
+	}
+	console.log("currArray is ",currArray)
+	trialNum=trialNum+6
 }
 
 drawRects()
