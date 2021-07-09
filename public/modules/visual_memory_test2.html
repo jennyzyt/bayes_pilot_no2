@@ -25,8 +25,11 @@ console.log("test")
 //USERS MUST INDICATE WHETHER THE TEST DISPLAY IS IDENTICAL TO THE STUDY DISPLAY OR WHETHER A SINGLE ITEM HAS CHANGED COLOR
 //TASK REPEATS 120 TIMES WITH ARRAYS OF SIZE (4, 6, 8)
 //FINAL SCORES RANGE FROM 0 TO 6 BY AVERAGING THE SCORES OBTAINED FROM EACH ARRAY
+var timeout;
+var timeoutQuestion;
 
 rect1=[20,80,140,200,260]
+var trialNum=0
 
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
@@ -46,8 +49,11 @@ function drawRects(){
 		.data(rect1)
 		.enter()
 		.append('rect')
+		.attr("id",function(d,i){
+			console.log("id is ",i)
+			return i
+		})
 		.attr('x',function(d){
-			console.log("d is ",d)
 			return d
 		})
 		.attr('y',20)
@@ -56,20 +62,26 @@ function drawRects(){
 		.attr("fill",function(d,i){
 			return colorArray[i+trialNum]
 		})
-	timeout = setTimeout(greyScreen, 1000)
+
+	 timeout = setTimeout(greyScreen, 1000)
 }
 function greyScreen(){
 	d3.select('svg')
 		.append('rect')
+		.attr("id","greyScreen")
 		.attr('x',20)
 		.attr('y',20)
 		.attr('width',600)
 		.attr('height',600)
 		.attr("fill","lightgrey")
+		.transition()
+		.duration(500)
 
-	visualQuestion()
+	 timeoutQuestion = setTimeout(visualQuestion, 1000)
 }
 function visualQuestion(){
+	d3.select('#greyScreen').remove()
+
 	var currArray=[]
 	for (i=0; i<6; i++){
 		currArray.push(i+trialNum)
