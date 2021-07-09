@@ -61,23 +61,31 @@ function drawRects(){
 		// .transition()
 		// .duration(5000)
 		// .attr("fill","yellow")	
-		timeout=setTimeout(greyScreen,4000)
+		timeout=setTimeout(greyScreen,500)
 }
 function greyScreen(){
 	console.log("called!")
 
 	d3.select("svg")
 		.append('rect')
+		.attr("id", "greyRect")
 		.attr("x",0)
 		.attr("y",0)
 		.attr("width",screen.width)
 		.attr("height",screen.height)
 		.attr("fill","grey")
+		timeout=setTimeout(visualQuestion,500)
 
 
 }
 function visualQuestion(){
+	var sameRects = 0;
 
+	d3.select("#greyRect").style("visibility", "hidden")
+
+	if (!sameRects) {
+		//Do stuff
+	}
 }
 
 drawRects()
