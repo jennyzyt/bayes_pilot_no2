@@ -6,11 +6,13 @@
 <svg id="container" width=600 height=600></svg>
 
 
-</div>
+<button onclick="yesButton()"style = "position:absolute; left:100px; top:240px; font-size: 18px" >Yes</button>
+<button onclick="noButton()"style = "position:absolute; left:200px; top:240px; font-size: 18px;">No</button> 
 
 <style>
 
 </style>
+
 
 <script>
 
@@ -24,6 +26,7 @@
 
 rect1=[20,80,140,200]
 var timeout
+var sameRects //1 if the rect colors stayed the same, 0 if they changed
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -95,6 +98,7 @@ function visualQuestion(){
 		.attr("fill","black")
 		.style("font-size","22px")
 
+
 	// decide whether to change a square or not
     // if we change the square:
         // randomly pick a square id
@@ -104,6 +108,14 @@ function visualQuestion(){
     // buttons for "did not change" and "did change"
     // check if correct or not
     // change the color of the button / check mark beside it when clicked
+}
+
+function yesButton() {
+	console.log("yes button clicked")
+}
+
+function noButton() {
+	console.log("no button clicked")
 }
 
 drawRects()
