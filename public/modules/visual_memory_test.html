@@ -81,11 +81,29 @@ function greyScreen(){
 function visualQuestion(){
 	var sameRects = 0;
 
-	d3.select("#greyRect").style("visibility", "hidden")
+	d3.select("#greyRect").style("visibility", "hidden") //removes grey rectangle
 
 	if (!sameRects) {
 		//Do stuff
 	}
+
+	d3.select("svg") //adds "did the image change" text
+		.append("text")
+		.text("Did the image change?")
+		.attr("x",0)
+        .attr("y",100)
+		.attr("fill","black")
+		.style("font-size","22px")
+
+	// decide whether to change a square or not
+    // if we change the square:
+        // randomly pick a square id
+        // change the color of that square
+        // remember we DID change a square
+    // ask the question
+    // buttons for "did not change" and "did change"
+    // check if correct or not
+    // change the color of the button / check mark beside it when clicked
 }
 
 drawRects()
