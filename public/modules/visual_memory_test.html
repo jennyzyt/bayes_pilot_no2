@@ -26,7 +26,8 @@
 
 rect1=[20,80,140,200]
 var timeout
-var sameRects //1 if the rect colors stayed the same, 0 if they changed
+var correct //1 if the user is correct about whether the rects changed, 0 if not
+var rectsChanged //1 if a rect color changed, 0 if not
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -82,11 +83,11 @@ function greyScreen(){
 
 }
 function visualQuestion(){
-	var sameRects = 0;
+	var rectsChanged = 0;
 
 	d3.select("#greyRect").style("visibility", "hidden") //removes grey rectangle
 
-	if (!sameRects) {
+	if (rectsChanged) {
 		//Do stuff
 	}
 
@@ -112,10 +113,20 @@ function visualQuestion(){
 
 function yesButton() {
 	console.log("yes button clicked")
+	if (rectsChanged) {
+		correct = 1;
+	} else {
+		correct = 0;
+	}
 }
 
 function noButton() {
 	console.log("no button clicked")
+	if (rectsChanged) {
+		correct = 0;
+	} else {
+		correct = 1;
+	}
 }
 
 drawRects()
