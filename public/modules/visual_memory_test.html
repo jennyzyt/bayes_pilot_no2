@@ -86,12 +86,16 @@ function greyScreen(){
 
 }
 function visualQuestion(){
-	var rectsChanged = 0;
+	var rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
+	//rectsChanged = 1 //delete later, just for debugging
+
 
 	d3.select("#greyRect").style("visibility", "hidden") //removes grey rectangle
 
 	if (rectsChanged) {
-		//Do stuff
+		var rectChangedIndex = Math.floor(Math.random()*rect1.length); //pick a random rectangle id to change
+		d3.select('[id="' + rectChangedIndex + '"]')
+			.attr("fill", "blue") //changes color of random rect to blue (switch to more elegant color later)
 	}
 
 	d3.select("svg") //adds "did the image change" text
