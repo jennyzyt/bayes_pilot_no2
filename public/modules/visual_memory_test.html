@@ -5,8 +5,8 @@
 
 <svg id="container" width=600 height=600 style = "position:relative"></svg>
 
-<button onclick="yesButton()"style = "position:absolute; left:300px; top:240px; font-size: 18px" >Yes</button>
-<button onclick="noButton()"style = "position:absolute; left:400px; top:240px; font-size: 18px;">No</button> 
+<button onclick="yesButton()"style = "position:relative; left:-550px; top:-250px; font-size: 18px" >Yes</button>
+<button onclick="noButton()"style = "position:relative; left:-500px; top: -250px; font-size: 18px;">No</button> 
 
 </div>
 
@@ -101,8 +101,8 @@ function visualQuestion(){
 	d3.select("svg") //adds "did the image change" text
 		.append("text")
 		.text("Did the image change?")
-		.attr("x",0)
-        .attr("y",100)
+		.attr("x",20)
+        .attr("y",300)
 		.attr("fill","black")
 		.style("font-size","22px")
 
