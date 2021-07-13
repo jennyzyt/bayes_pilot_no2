@@ -44,6 +44,7 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 
 function drawRects(){
 
+	//creates and controls the colored squares
 	d3.select("svg")
 		.selectAll('rect')
 		.data(rect1)
@@ -98,7 +99,8 @@ function visualQuestion(){
 			.attr("fill", "blue") //changes color of random rect to blue (switch to more elegant color later)
 	}
 
-	d3.select("svg") //adds "did the image change" text
+	//adds "did the image change" text
+	d3.select("svg") 
 		.append("text")
 		.text("Did the image change?")
 		.attr("x",20)
@@ -106,6 +108,7 @@ function visualQuestion(){
 		.attr("fill","black")
 		.style("font-size","22px")
 
+	//Makes the yes and no buttons visible
 	d3.select("#yesButton").style("visibility","visible")
 	d3.select("#noButton").style("visibility", "visible")
 
@@ -121,6 +124,7 @@ function visualQuestion(){
     // change the color of the button / check mark beside it when clicked
 }
 
+//when the yes  + no buttons are clicked, remember if their answer is right
 function yesButton() {
 	console.log("yes button clicked")
 	if (rectsChanged) {
