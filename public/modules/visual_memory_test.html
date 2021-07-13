@@ -68,7 +68,7 @@ function drawRects(){
 		// .transition()
 		// .duration(5000)
 		// .attr("fill","yellow")	
-		timeout=setTimeout(greyScreen,500)
+		timeout=setTimeout(greyScreen,1000)
 }
 function greyScreen(){
 	console.log("called!")
@@ -78,8 +78,8 @@ function greyScreen(){
 		.attr("id", "greyRect")
 		.attr("x",0)
 		.attr("y",0)
-		.attr("width",screen.width)
-		.attr("height",screen.height)
+		.attr("width",rect1[rect1.length - 1] + 60) //Make the grey rect just wider than the image
+		.attr("height", 80)
 		.attr("fill","grey")
 		timeout=setTimeout(visualQuestion,500)
 
