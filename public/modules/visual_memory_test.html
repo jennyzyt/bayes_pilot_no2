@@ -97,7 +97,7 @@ function visualQuestion(){
 		var colorChangedIndex = Math.floor(Math.random()*colorArray.length); //pick a random color to change
 		console.log("color change index: ", colorChangedIndex);
 		d3.select('[id="' + rectChangedIndex + '"]')
-			.attr("fill", colorArray[colorChangedIndex]) //changes color of random rect to blue (switch to more elegant color later)
+			.attr("fill", colorArray[colorChangedIndex]) //changes color of random rect to new random color
 	}
 
 	d3.select("svg") //adds "did the image change" text
