@@ -32,6 +32,7 @@ var timeout
 var correct //1 if the user is correct about whether the rects changed, 0 if not
 var rectsChanged //1 if a rect color changed, 0 if not
 var n=3 //the number of times that the test is repeated
+var correctArray=[]
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -153,6 +154,7 @@ function yesButton() {
 	} else {
 		correct = 0;
 	}
+	correctArray.push(correct);
 	d3.select("#text").style("visibility","hidden")
 	d3.select("#yesButton").style("visibility","hidden")
 	d3.select("#noButton").style("visibility","hidden")
@@ -165,6 +167,7 @@ function noButton() {
 	} else {
 		correct = 1;
 	}
+	correctArray.push(correct);
 	d3.select("#text").style("visibility","hidden")
 	d3.select("#yesButton").style("visibility","hidden")
 	d3.select("#noButton").style("visibility","hidden")
