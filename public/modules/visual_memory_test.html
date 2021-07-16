@@ -31,6 +31,7 @@ rect1=[20,80,140,200]
 var timeout
 var correct //1 if the user is correct about whether the rects changed, 0 if not
 var rectsChanged //1 if a rect color changed, 0 if not
+var n=3 //the number of times that the test is repeated
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -43,50 +44,53 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
 function drawRects(){
-
+	console.log("drawRects called!")
 	//creates and controls the colored squares
 	d3.select("svg")
 		.selectAll('rect')
 		.data(rect1)
-		.enter()
-		.append('rect')
-		.attr("id",function(d,i){
-			return i
-		})
-		.attr('x',function(d){
-			console.log(d)
-			return d
-		})
-		.attr("y",20)
-		.attr("width",40)
-		.attr("height",40)
-		.attr("fill",function(d,i){
-			return colorArray[i]
-		})
+		// .enter()
+		// .append('rect')
+		// .attr("id",function(d,i){
+		// 	return i
+		// })
+		// .attr('x',function(d){
+		// 	console.log(d)
+		// 	return d
+		// })
+		// .attr("y",20)
+		// .attr("width",40)
+		// .attr("height",40)
+		// .attr("fill",function(d,i){
+		// 	return colorArray[i]
+		// })
+		.style("visibility","visible")
 		// .transition()
 		// .duration(5000)
 		// .attr("fill","red")
 		// .transition()
 		// .duration(5000)
-		// .attr("fill","yellow")	
+		// .attr("fill","yellow")
+		// d3.select("#rect").style("visibility", "visible")
 		timeout=setTimeout(greyScreen,1000)
 }
 function greyScreen(){
-	console.log("called!")
-
-	d3.select("svg")
-		.append('rect')
-		.attr("id", "greyRect")
-		.attr("x",0)
-		.attr("y",0)
-		.attr("width",rect1[rect1.length - 1] + 60) //Make the grey rect just wider than the image
-		.attr("height", 80)
-		.attr("fill","grey")
-		timeout=setTimeout(visualQuestion,500)
+	console.log("greyScreen called!")
+	d3.select("#greyRect").style("visibility", "visible")
+	// d3.select("svg")
+	// 	.append('rect')
+	// 	.attr("id", "greyRect")
+	// 	.attr("x",0)
+	// 	.attr("y",0)
+	// 	.attr("width",rect1[rect1.length - 1] + 60) //Make the grey rect just wider than the image
+	// 	.attr("height", 80)
+	// 	.attr("fill","grey")
+	timeout=setTimeout(visualQuestion,500)
 
 
 }
 function visualQuestion(){
+	console.log("visualQuestion called!")
 	var rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
 	//rectsChanged = 1 //delete later, just for debugging
 
@@ -134,6 +138,8 @@ function yesButton() {
 	} else {
 		correct = 0;
 	}
+	d3.select("#yesButton").style("visibility","hidden")
+	d3.select("#noButton").style("visibility","hidden")
 }
 
 function noButton() {
@@ -143,7 +149,44 @@ function noButton() {
 	} else {
 		correct = 1;
 	}
+	d3.select("#yesButton").style("visibility","hidden")
+	d3.select("#noButton").style("visibility","hidden")
 }
-
-drawRects()
+// 4 rects
+d3.select("svg")
+		.selectAll('rect')
+		.data(rect1)
+		.enter()
+		.append('rect')
+		.attr("id",function(d,i){
+			return i
+		})
+		.attr('x',function(d){
+			console.log(d)
+			return d
+		})
+		.attr("y",20)
+		.attr("width",40)
+		.attr("height",40)
+		.attr("fill",function(d,i){
+			return colorArray[i]
+		})
+		.style("visibility", "hidden") //removes 4 rects
+// grey screen
+d3.select("svg")
+		.append('rect')
+		.attr("id", "greyRect")
+		.attr("x",0)
+		.attr("y",0)
+		.attr("width",rect1[rect1.length - 1] + 60) //Make the grey rect just wider than the image
+		.attr("height", 80)
+		.attr("fill","grey")
+		.style("visibility", "hidden") //removes grey rectangle
+for (let i=0; i<n; i++) {
+	console.log("inside for loop!")
+	//drawRects()
+	// timeout=setTimeout(greyScreen,1000)
+	// timeout=setTimeout(visualQuestion,500)
+	console.log("i=",i)
+}
 </script>
