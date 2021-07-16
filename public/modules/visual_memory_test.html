@@ -45,6 +45,11 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 
 function drawRects(){
 	console.log("drawRects called!")
+
+	//We need to hide the yes and no buttons and the "did the question change" text here
+
+	//Try replacing the rects code below with: d3.selectAll("#rect").style("visibility", "visible")
+
 	//creates and controls the colored squares
 	d3.select("svg")
 		.selectAll('rect')
@@ -105,6 +110,9 @@ function visualQuestion(){
 			.attr("fill", colorArray[colorChangedIndex]) //changes color of random rect to new random color
 	}
 
+	//This did the image change d3 should also be outside the functions. We need to give it an id, make it start hidden, 
+	//become visible in this function, and become hidden in the next function
+
 	//adds "did the image change" text
 	d3.select("svg") 
 		.append("text")
@@ -152,6 +160,10 @@ function noButton() {
 	d3.select("#yesButton").style("visibility","hidden")
 	d3.select("#noButton").style("visibility","hidden")
 }
+
+//Could we put all these d3's in a function like initialize() that we call at the beginning? 
+//To make it cleaner and make sure everything happens in the order we want
+
 // 4 rects
 d3.select("svg")
 		.selectAll('rect')
@@ -183,6 +195,8 @@ d3.select("svg")
 		.attr("fill","grey")
 		.style("visibility", "hidden") //removes grey rectangle
 for (let i=0; i<n; i++) {
+	//For loop call visual question, and thats all
+
 	console.log("inside for loop!")
 	//drawRects()
 	// timeout=setTimeout(greyScreen,1000)
