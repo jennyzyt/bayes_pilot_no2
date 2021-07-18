@@ -50,6 +50,12 @@ function drawRects(){
 	//We need to hide the yes and no buttons and the "did the question change" text here
 
 	//Try replacing the rects code below with: d3.selectAll("#rect").style("visibility", "visible")
+
+	//Oh!!!! I just remembered we made a different id for each square, thats why the code below isn't working.
+	//We could either make each visible one by one with something like: d3.selectAll("#0").style.... or we 
+	//if youre feeling ambitious could try to make them visible in a loop, either one similar to how we
+	//assigned their ids or like for(i=0;i<colorArray.length) {d3.select("#" + i).style("visibility", "visible")}.
+
 	d3.selectAll("#rect").style("visibility", "visible")
 	//creates and controls the colored squares
 	// d3.select("svg")
@@ -218,6 +224,12 @@ function initialize() {
 		.style("visibility", "hidden")
 }
 initialize()
+
+//It looks like this is looping through the first two rounds super quickly so the user can't use the yes/no
+//buttons, but on the last one goes pauses to let the user interact. This is a problem obviously. We could
+//either try to make the for loop pause and wait for a yes or no button to be clicked, Or instead of using 
+//a for loop we could make i and n global variables, and then inside the yes/no buttons have something like
+// if(i<n){drawRects() i++ })
 for (let i=0; i<n; i++) {
 
 	//For loop should call drawRects() and only drawRects()
