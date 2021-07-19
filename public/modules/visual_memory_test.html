@@ -31,8 +31,9 @@ rect1=[20,80,140,200]
 var timeout
 var correct //1 if the user is correct about whether the rects changed, 0 if not
 var rectsChanged //1 if a rect color changed, 0 if not
-var n=3 //the number of times that the test is repeated
-var correctArray=[]
+var n=3 //the number of times that we want the test to be conducted
+var count=1 //the number of times that the test has been conducted
+var correctArray=[] //an array of var correct; store whether the user is correct each round
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -45,38 +46,9 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
 function drawRects(){
-	console.log("drawRects called!")
-
-	//We need to hide the yes and no buttons and the "did the question change" text here
-
-	//Try replacing the rects code below with: d3.selectAll("#rect").style("visibility", "visible")
-
-	//Oh!!!! I just remembered we made a different id for each square, thats why the code below isn't working.
-	//We could either make each visible one by one with something like: d3.selectAll("#0").style.... or we 
-	//if youre feeling ambitious could try to make them visible in a loop, either one similar to how we
-	//assigned their ids or like for(i=0;i<colorArray.length) {d3.select("#" + i).style("visibility", "visible")}.
-
-	d3.selectAll("#rect").style("visibility", "visible")
-	//creates and controls the colored squares
-	// d3.select("svg")
-	// 	.selectAll('rect')
-	// 	.data(rect1)
-		// .enter()
-		// .append('rect')
-		// .attr("id",function(d,i){
-		// 	return i
-		// })
-		// .attr('x',function(d){
-		// 	console.log(d)
-		// 	return d
-		// })
-		// .attr("y",20)
-		// .attr("width",40)
-		// .attr("height",40)
-		// .attr("fill",function(d,i){
-		// 	return colorArray[i]
-		// })
-
+	for (i=0; i<rect1.length; i++) {
+		d3.select('[id="' + i + '"]').style("visibility", "visible")
+	}
 		// .transition()
 		// .duration(5000)
 		// .attr("fill","red")
@@ -84,28 +56,17 @@ function drawRects(){
 		// .duration(5000)
 		// .attr("fill","yellow")
 		// d3.select("#rect").style("visibility", "visible")
-		timeout=setTimeout(greyScreen,1000)
+	timeout=setTimeout(greyScreen,1000)
 }
+
 function greyScreen(){
-	console.log("greyScreen called!")
 	d3.select("#greyRect").style("visibility", "visible")
-	// d3.select("svg")
-	// 	.append('rect')
-	// 	.attr("id", "greyRect")
-	// 	.attr("x",0)
-	// 	.attr("y",0)
-	// 	.attr("width",rect1[rect1.length - 1] + 60) //Make the grey rect just wider than the image
-	// 	.attr("height", 80)
-	// 	.attr("fill","grey")
 	timeout=setTimeout(visualQuestion,500)
-
-
 }
+
 function visualQuestion(){
-	console.log("visualQuestion called!")
 	var rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
 	//rectsChanged = 1 //delete later, just for debugging
-
 
 	d3.select("#greyRect").style("visibility", "hidden") //removes grey rectangle
 
@@ -117,42 +78,14 @@ function visualQuestion(){
 			.attr("fill", colorArray[colorChangedIndex]) //changes color of random rect to new random color
 	}
 
-	//This did the image change d3 should also be outside the functions. We need to give it an id, make it start hidden, 
-	//become visible in this function, and become hidden in the next function
-
-	//adds "did the image change" text
-	// d3.select("svg") 
-	// 	.append("text")
-	// 	.attr("id", "text")
-	// 	.text("Did the image change?")
-	// 	.attr("x",20)
-    //     .attr("y",300)
-	// 	.attr("fill","black")
-	// 	.style("font-size","22px")
-
 	// Makes the "did the image change" text visible
 	d3.select("#text").style("visibility","visible")
 	//Makes the yes and no buttons visible
 	d3.select("#yesButton").style("visibility","visible")
 	d3.select("#noButton").style("visibility", "visible")
-
-
-	// decide whether to change a square or not
-    // if we change the square:
-        // randomly pick a square id
-        // change the color of that square
-        // remember we DID change a square
-    // ask the question
-    // buttons for "did not change" and "did change"
-    // check if correct or not
-    // change the color of the button / check mark beside it when clicked
 }
 
 //when the yes  + no buttons are clicked, remember if their answer is right
-
-//Eventually the buttons need to make a list that remembers whether the person was
-//correct or not for every round of squares
-
 function yesButton() {
 	console.log("yes button clicked")
 	if (rectsChanged) {
@@ -161,9 +94,14 @@ function yesButton() {
 		correct = 0;
 	}
 	correctArray.push(correct);
+	console.log(correctArray);
 	d3.select("#text").style("visibility","hidden")
 	d3.select("#yesButton").style("visibility","hidden")
 	d3.select("#noButton").style("visibility","hidden")
+	if (count<n) {
+		drawRects()
+		count++
+	}
 }
 
 function noButton() {
@@ -174,13 +112,16 @@ function noButton() {
 		correct = 1;
 	}
 	correctArray.push(correct);
+	console.log(correctArray);
 	d3.select("#text").style("visibility","hidden")
 	d3.select("#yesButton").style("visibility","hidden")
 	d3.select("#noButton").style("visibility","hidden")
+	if (count<n) {
+		drawRects()
+		count++
+	}
 }
 
-//Could we put all these d3's in a function like initialize() that we call at the beginning? 
-//To make it cleaner and make sure everything happens in the order we want
 function initialize() {
 	// 4 rects
 	d3.select("svg")
@@ -223,19 +164,8 @@ function initialize() {
 		.style("font-size","22px")
 		.style("visibility", "hidden")
 }
+
 initialize()
+drawRects()
 
-//It looks like this is looping through the first two rounds super quickly so the user can't use the yes/no
-//buttons, but on the last one goes pauses to let the user interact. This is a problem obviously. We could
-//either try to make the for loop pause and wait for a yes or no button to be clicked, Or instead of using 
-//a for loop we could make i and n global variables, and then inside the yes/no buttons have something like
-// if(i<n){drawRects() i++ })
-for (let i=0; i<n; i++) {
-
-	//For loop should call drawRects() and only drawRects()
-
-	console.log("inside for loop!")
-	drawRects()
-	console.log("i=",i)
-}
 </script>
