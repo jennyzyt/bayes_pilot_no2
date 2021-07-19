@@ -46,9 +46,13 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
 function drawRects(){
+	console.log("drawRects called")
 	for (i=0; i<rect1.length; i++) {
 		d3.select('[id="' + i + '"]').style("visibility", "visible")
 	}
+	rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
+	console.log("rectsChanged=", rectsChanged)
+	//rectsChanged = 1 //delete later, just for debugging
 		// .transition()
 		// .duration(5000)
 		// .attr("fill","red")
@@ -65,8 +69,6 @@ function greyScreen(){
 }
 
 function visualQuestion(){
-	var rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
-	//rectsChanged = 1 //delete later, just for debugging
 
 	d3.select("#greyRect").style("visibility", "hidden") //removes grey rectangle
 
@@ -106,10 +108,13 @@ function yesButton() {
 
 function noButton() {
 	console.log("no button clicked")
+	console.log("rectsChanged=", rectsChanged)
 	if (rectsChanged) {
 		correct = 0;
+		console.log("correct=", correct)
 	} else {
 		correct = 1;
+		console.log("correct=", correct)
 	}
 	correctArray.push(correct);
 	console.log(correctArray);
