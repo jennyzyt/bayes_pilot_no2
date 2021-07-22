@@ -31,6 +31,9 @@ rect1=[20,80,140,200]
 var timeout
 var correct //1 if the user is correct about whether the rects changed, 0 if not
 var rectsChanged //1 if a rect color changed, 0 if not
+var n=3 //the number of times that we want the test to be conducted
+var count=1 //the number of times that the test has been conducted
+var correctArray=[] //an array of var correct; store whether the user is correct each round
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -43,8 +46,90 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
 function drawRects(){
+	console.log("drawRects called")
+	for (i=0; i<rect1.length; i++) {
+		d3.select('[id="' + i + '"]').style("visibility", "visible")
+			.attr("fill", colorArray[i])
+	}
+	rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
+	console.log("rectsChanged=", rectsChanged)
+	//rectsChanged = 1 //delete later, just for debugging
+		// .transition()
+		// .duration(5000)
+		// .attr("fill","red")
+		// .transition()
+		// .duration(5000)
+		// .attr("fill","yellow")
+		// d3.select("#rect").style("visibility", "visible")
+	timeout=setTimeout(greyScreen,1000)
+}
 
-	//creates and controls the colored squares
+function greyScreen(){
+	d3.select("#greyRect").style("visibility", "visible")
+	timeout=setTimeout(visualQuestion,500)
+}
+
+function visualQuestion(){
+
+	d3.select("#greyRect").style("visibility", "hidden") //removes grey rectangle
+
+	if (rectsChanged) {
+		var rectChangedIndex = Math.floor(Math.random()*rect1.length); //pick a random rectangle id to change
+		var colorChangedIndex = Math.floor(Math.random()*colorArray.length); //pick a random color to change
+		console.log("color change index: ", colorChangedIndex);
+		d3.select('[id="' + rectChangedIndex + '"]')
+			.attr("fill", colorArray[colorChangedIndex]) //changes color of random rect to new random color
+	}
+
+	// Makes the "did the image change" text visible
+	d3.select("#text").style("visibility","visible")
+	//Makes the yes and no buttons visible
+	d3.select("#yesButton").style("visibility","visible")
+	d3.select("#noButton").style("visibility", "visible")
+}
+
+//when the yes  + no buttons are clicked, remember if their answer is right
+function yesButton() {
+	console.log("yes button clicked")
+	if (rectsChanged) {
+		correct = 1;
+	} else {
+		correct = 0;
+	}
+	correctArray.push(correct);
+	console.log(correctArray);
+	d3.select("#text").style("visibility","hidden")
+	d3.select("#yesButton").style("visibility","hidden")
+	d3.select("#noButton").style("visibility","hidden")
+	if (count<n) {
+		drawRects()
+		count++
+	}
+}
+
+function noButton() {
+	console.log("no button clicked")
+	console.log("rectsChanged=", rectsChanged)
+	if (rectsChanged) {
+		correct = 0;
+		console.log("correct=", correct)
+	} else {
+		correct = 1;
+		console.log("correct=", correct)
+	}
+	correctArray.push(correct);
+	console.log(correctArray);
+	d3.select("#text").style("visibility","hidden")
+	d3.select("#yesButton").style("visibility","hidden")
+	d3.select("#noButton").style("visibility","hidden")
+	if (count<n) {
+		drawRects()
+		count++
+	}
+}
+
+function initialize() {
+	// 4 rects
 	d3.select("svg")
 		.selectAll('rect')
 		.data(rect1)
@@ -63,17 +148,8 @@ function drawRects(){
 		.attr("fill",function(d,i){
 			return colorArray[i]
 		})
-		// .transition()
-		// .duration(5000)
-		// .attr("fill","red")
-		// .transition()
-		// .duration(5000)
-		// .attr("fill","yellow")	
-		timeout=setTimeout(greyScreen,1000)
-}
-function greyScreen(){
-	console.log("called!")
-
+		.style("visibility", "hidden") //removes 4 rects
+	// grey screen
 	d3.select("svg")
 		.append('rect')
 		.attr("id", "greyRect")
@@ -82,68 +158,20 @@ function greyScreen(){
 		.attr("width",rect1[rect1.length - 1] + 60) //Make the grey rect just wider than the image
 		.attr("height", 80)
 		.attr("fill","grey")
-		timeout=setTimeout(visualQuestion,500)
-
-
-}
-function visualQuestion(){
-	var rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
-	//rectsChanged = 1 //delete later, just for debugging
-
-
-	d3.select("#greyRect").style("visibility", "hidden") //removes grey rectangle
-
-	if (rectsChanged) {
-		var rectChangedIndex = Math.floor(Math.random()*rect1.length); //pick a random rectangle id to change
-		var colorChangedIndex = Math.floor(Math.random()*colorArray.length); //pick a random color to change
-		console.log("color change index: ", colorChangedIndex);
-		d3.select('[id="' + rectChangedIndex + '"]')
-			.attr("fill", colorArray[colorChangedIndex]) //changes color of random rect to new random color
-	}
-
+		.style("visibility", "hidden") //removes grey rectangle
 	//adds "did the image change" text
 	d3.select("svg") 
 		.append("text")
+		.attr("id", "text")
 		.text("Did the image change?")
 		.attr("x",20)
         .attr("y",300)
 		.attr("fill","black")
 		.style("font-size","22px")
-
-	//Makes the yes and no buttons visible
-	d3.select("#yesButton").style("visibility","visible")
-	d3.select("#noButton").style("visibility", "visible")
-
-
-	// decide whether to change a square or not
-    // if we change the square:
-        // randomly pick a square id
-        // change the color of that square
-        // remember we DID change a square
-    // ask the question
-    // buttons for "did not change" and "did change"
-    // check if correct or not
-    // change the color of the button / check mark beside it when clicked
+		.style("visibility", "hidden")
 }
 
-//when the yes  + no buttons are clicked, remember if their answer is right
-function yesButton() {
-	console.log("yes button clicked")
-	if (rectsChanged) {
-		correct = 1;
-	} else {
-		correct = 0;
-	}
-}
-
-function noButton() {
-	console.log("no button clicked")
-	if (rectsChanged) {
-		correct = 0;
-	} else {
-		correct = 1;
-	}
-}
-
+initialize()
 drawRects()
+
 </script>
