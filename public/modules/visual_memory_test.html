@@ -7,7 +7,7 @@
 
 <button id="yesButton" onclick="yesButton()"style = "position:relative; left:-550px; top:-250px; font-size: 18px; visibility:hidden;" >Yes</button>
 <button id="noButton" onclick="noButton()"style = "position:relative; left:-500px; top: -250px; font-size: 18px; visibility:hidden;">No</button> 
-<button id="nextButton" onclick="drawRects()"style = "position:relative; left:-500px; top: -250px; font-size: 18px; visibility:hidden;">Next</button> 
+<button id="readyButton" onclick="readyButton()"style = "position:relative; left:-500px; top: -250px; font-size: 18px; visibility:hidden;">Next</button> 
 
 </div>
 
@@ -48,6 +48,7 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 
 function drawRects(){
 	console.log("drawRects called")
+	d3.select("#readyButton").style("visibility","hidden")
 	for (i=0; i<rect1.length; i++) {
 		d3.select('[id="' + i + '"]').style("visibility", "visible")
 			.attr("fill", colorArray[i])
@@ -103,9 +104,8 @@ function yesButton() {
 	d3.select("#yesButton").style("visibility","hidden")
 	d3.select("#noButton").style("visibility","hidden")
 	if (count<n) {
-		d3.select("#nextButton").style("visibility","visible")
-		//drawRects()
 		count++
+		d3.select("#readyButton").style("visibility","visible")
 	}
 }
 
@@ -125,10 +125,13 @@ function noButton() {
 	d3.select("#yesButton").style("visibility","hidden")
 	d3.select("#noButton").style("visibility","hidden")
 	if (count<n) {
-		d3.select("#nextButton").style("visibility","visible")
-		//drawRects()
 		count++
+		d3.select("#readyButton").style("visibility","visible")
 	}
+}
+
+function readyButton() {
+	drawRects()
 }
 
 function initialize() {
