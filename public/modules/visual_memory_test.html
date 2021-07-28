@@ -51,7 +51,7 @@ function drawRects(){
 	d3.select("#readyButton").style("visibility","hidden")
 	for (i=0; i<rect1.length; i++) {
 		d3.select('[id="' + i + '"]').style("visibility", "visible")
-			.attr("fill", colorArray[i])
+			//.attr("fill", colorArray[i])
 	}
 	rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
 	console.log("rectsChanged=", rectsChanged)
