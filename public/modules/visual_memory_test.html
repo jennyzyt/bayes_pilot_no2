@@ -35,6 +35,7 @@ var rectsChanged //1 if a rect color changed, 0 if not
 var n=3 //the number of times that we want the test to be conducted
 var count=1 //the number of times that the test has been conducted
 var correctArray=[] //an array of var correct; store whether the user is correct each round
+var newColor //index for colorArray
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -50,8 +51,9 @@ function drawRects(){
 	console.log("drawRects called")
 	d3.select("#readyButton").style("visibility","hidden")
 	for (i=0; i<rect1.length; i++) {
+		newColor = Math.floor(Math.random() * colorArray.length);
 		d3.select('[id="' + i + '"]').style("visibility", "visible")
-			//.attr("fill", colorArray[i])
+			.attr("fill", colorArray[newColor])
 	}
 	rectsChanged = Math.floor(Math.random() * 2); //1 if rectangles changed, 0 if not
 	console.log("rectsChanged=", rectsChanged)
